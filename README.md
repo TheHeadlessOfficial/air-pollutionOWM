@@ -1,6 +1,6 @@
 # Conky Air Pollution
  
-A standalone conky (written in Python) that shows the AIR POLLUTIONs, using [OpenWeather](https://openweathermap.org/) website.<br>
+A standalone conky (written in Python) that shows the AIR POLLUTIONs, using [OpenWeather API](https://openweathermap.org/) website.<br>
 
 <br>
 <br>
