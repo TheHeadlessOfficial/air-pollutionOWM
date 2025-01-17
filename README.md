@@ -1,7 +1,7 @@
-# Conky Moon Phases
+# Conky Air Pollution
  
-A standalone conky (written in Python) that shows the moon phases, using [moongiant.com](https://www.moongiant.com/) website.<br>
-Based on https://gitlab.com/teobigusgeekus/Moongiant_conky_script<br>
+A standalone conky (written in Python) that shows the AIR POLLUTIONs, using [OpenWeather](https://openweathermap.org/) website.<br>
+
 <br>
 <br>
 
