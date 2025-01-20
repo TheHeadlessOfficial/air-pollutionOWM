@@ -65,34 +65,34 @@ conky.config = {
 }
 
 conky.text = [[
-########################################### load python file and write heading 
-${execpi 900 python ~/.conky/AirPollution/airpollution.py}${execpi 900 sed -n '1p' $HOME/.conky/AirPollution//conkyg.txt}
-${execpi 900 sed -n '2p' $HOME/.conky/AirPollution//conkyg.txt}
-${execpi 900 sed -n '3p' $HOME/.conky/AirPollution//conkyg.txt}
+########################################### load python file and write heading
+${execpi 900 python ~/.conky/AirPollution/airpollution.py}${if_existing /tmp/script_done.lock}${else}${execpi 900 sed -n '1p' $HOME/.conky/AirPollution/conkyg.txt}
+${execpi 900 sed -n '2p' $HOME/.conky/AirPollution/conkyg.txt}
+${execpi 900 sed -n '3p' $HOME/.conky/AirPollution/conkyg.txt}
 ########################################### write today data
-${execpi 900 sed -n '1p' $HOME/.conky/AirPollution//conkyt.txt}
-${execpi 900 sed -n '2p' $HOME/.conky/AirPollution//conkyt.txt}
-${execpi 900 sed -n '3p' $HOME/.conky/AirPollution//conkyt.txt}
-${execpi 900 sed -n '4p' $HOME/.conky/AirPollution//conkyt.txt}
-${execpi 900 sed -n '5p' $HOME/.conky/AirPollution//conkyt.txt}
-${execpi 900 sed -n '6p' $HOME/.conky/AirPollution//conkyt.txt}
+${execpi 900 sed -n '1p' $HOME/.conky/AirPollution/conkyt.txt}
+${execpi 900 sed -n '2p' $HOME/.conky/AirPollution/conkyt.txt}
+${execpi 900 sed -n '3p' $HOME/.conky/AirPollution/conkyt.txt}
+${execpi 900 sed -n '4p' $HOME/.conky/AirPollution/conkyt.txt}
+${execpi 900 sed -n '5p' $HOME/.conky/AirPollution/conkyt.txt}
+${execpi 900 sed -n '6p' $HOME/.conky/AirPollution/conkyt.txt}
 ########################################### write next days data
-${execpi 900 sed -n '1p' $HOME/.conky/AirPollution//conkyn.txt}
-${execpi 900 sed -n '2p' $HOME/.conky/AirPollution//conkyn.txt}
-${execpi 900 sed -n '3p' $HOME/.conky/AirPollution//conkyn.txt}
-${execpi 900 sed -n '4p' $HOME/.conky/AirPollution//conkyn.txt}
-${execpi 900 sed -n '5p' $HOME/.conky/AirPollution//conkyn.txt}
-${execpi 900 sed -n '6p' $HOME/.conky/AirPollution//conkyn.txt}
-${execpi 900 sed -n '7p' $HOME/.conky/AirPollution//conkyn.txt}
-${execpi 900 sed -n '8p' $HOME/.conky/AirPollution//conkyn.txt}
-${execpi 900 sed -n '9p' $HOME/.conky/AirPollution//conkyn.txt}
-${execpi 900 sed -n '10p' $HOME/.conky/AirPollution//conkyn.txt}
-${execpi 900 sed -n '11p' $HOME/.conky/AirPollution//conkyn.txt}
-${execpi 900 sed -n '12p' $HOME/.conky/AirPollution//conkyn.txt}
-${execpi 900 sed -n '13p' $HOME/.conky/AirPollution//conkyn.txt}
-${execpi 900 sed -n '14p' $HOME/.conky/AirPollution//conkyn.txt}
-${execpi 900 sed -n '15p' $HOME/.conky/AirPollution//conkyn.txt}
-${execpi 900 sed -n '16p' $HOME/.conky/AirPollution//conkyn.txt}
-${execpi 900 sed -n '17p' $HOME/.conky/AirPollution//conkyn.txt}
-${color2}${hr 1}
+${execpi 900 sed -n '1p' $HOME/.conky/AirPollution/conkyn.txt}
+${execpi 900 sed -n '2p' $HOME/.conky/AirPollution/conkyn.txt}
+${execpi 900 sed -n '3p' $HOME/.conky/AirPollution/conkyn.txt}
+${execpi 900 sed -n '4p' $HOME/.conky/AirPollution/conkyn.txt}
+${execpi 900 sed -n '5p' $HOME/.conky/AirPollution/conkyn.txt}
+${execpi 900 sed -n '6p' $HOME/.conky/AirPollution/conkyn.txt}
+${execpi 900 sed -n '7p' $HOME/.conky/AirPollution/conkyn.txt}
+${execpi 900 sed -n '8p' $HOME/.conky/AirPollution/conkyn.txt}
+${execpi 900 sed -n '9p' $HOME/.conky/AirPollution/conkyn.txt}
+${execpi 900 sed -n '10p' $HOME/.conky/AirPollution/conkyn.txt}
+${execpi 900 sed -n '11p' $HOME/.conky/AirPollution/conkyn.txt}
+${execpi 900 sed -n '12p' $HOME/.conky/AirPollution/conkyn.txt}
+${execpi 900 sed -n '13p' $HOME/.conky/AirPollution/conkyn.txt}
+${execpi 900 sed -n '14p' $HOME/.conky/AirPollution/conkyn.txt}
+${execpi 900 sed -n '15p' $HOME/.conky/AirPollution/conkyn.txt}
+${execpi 900 sed -n '16p' $HOME/.conky/AirPollution/conkyn.txt}
+${execpi 900 sed -n '17p' $HOME/.conky/AirPollution/conkyn.txt}
+${color2}${hr 1}${endif}
 ]];
