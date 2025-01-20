@@ -66,7 +66,7 @@ conky.config = {
 
 conky.text = [[
 ########################################### load python file and write heading
-${execpi 900 python ~/.conky/AirPollution/airpollution.py}${if_existing /tmp/script_done.lock}${else}${execpi 900 sed -n '1p' $HOME/.conky/AirPollution/conkyg.txt}
+${execpi 900 python ~/.conky/AirPollution/airpollution.py}${if_existing /tmp/script_done.lock}LOADING...${else}${execpi 900 sed -n '1p' $HOME/.conky/AirPollution/conkyg.txt}
 ${execpi 900 sed -n '2p' $HOME/.conky/AirPollution/conkyg.txt}
 ${execpi 900 sed -n '3p' $HOME/.conky/AirPollution/conkyg.txt}
 ########################################### write today data
