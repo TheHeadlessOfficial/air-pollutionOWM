@@ -7,7 +7,7 @@ import json
 import pprint
 import linecache
 # Lock file to tell conky that the script is running
-lock_file = "/tmp/script_done.lock"
+lock_file = "/tmp/script_airp.lock"
 # Check for file lock
 try:
     open(lock_file, 'w').close()
