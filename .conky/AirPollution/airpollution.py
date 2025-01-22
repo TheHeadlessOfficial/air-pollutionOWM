@@ -321,6 +321,9 @@ except Exception as e:
     # Manage exceptions (optional)
     filelockerror = (f"Error during script execution: {e}")
 finally:
-    # Remove lock file
-    os.remove(lock_file)
+    # remove lock file
+    try:
+        os.remove(lock_file)
+    except FileNotFoundError:
+        pass  # file already removed
 
