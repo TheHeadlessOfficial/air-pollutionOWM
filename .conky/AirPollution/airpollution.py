@@ -1,16 +1,16 @@
-import os, sys
-from PIL import Image
-import requests
-import time
-import datetime
-import json
-import pprint
-import linecache
 # Lock file to tell conky that the script is running
 lock_file = "/tmp/script_airp.lock"
 # Check for file lock
 try:
     open(lock_file, 'w').close()
+    import os, sys
+    from PIL import Image
+    import requests
+    import time
+    import datetime
+    import json
+    import pprint
+    import linecache
     ################################ set lat e lon
     lat = '45.373'
     lon = '11.8351'
